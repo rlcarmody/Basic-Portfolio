@@ -163,3 +163,28 @@ input:focus, textarea:focus {
     border-color: #4aaaa5;
     outline: #4aaaa5;
 }
+@media (max-width: 960px) {
+    .top-bar-container, .main-content {
+        width: 95vw;
+        margin: 0 auto;
+    }
+    .name {
+        padding: 8px;
+        font-size: .6em;
+    }
+    #profile {
+        margin: 0 auto;
+        display: block;
+        float: none;
+    }
+}
+
+@media (max-width: 608px) {
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+}
