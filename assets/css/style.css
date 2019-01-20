@@ -192,7 +192,6 @@ input:focus, textarea:focus {
         display: none;
     }
     .name {
-        padding-right: 0;
         margin-right: 2px;
         max-width: 35%;
     }
