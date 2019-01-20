@@ -1,7 +1,128 @@
+html {
+    overflow-y: scroll;
+}
 body {
-font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    height: 100vh;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-image: url('../images/subtle_surface.png');
 }
 
 img {
-    width: 150px;
+    width: 400px;
+}
+.top-bar-container, .main-content {
+    width: 960px;
+    margin: 0 auto;
+}
+.top-bar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+.top-bar {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    margin:0 0 20px 0;
+    width: 100%;
+    padding: 0;
+}
+#profile {
+    float: left;
+    margin: 8px;
+    width: 225px;
+    border-radius: 50%;
+    shape-outside: circle();
+}
+
+h1, h2 {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    padding: 0;
+    margin: 0;
+}
+h2 {
+    color: #4aaaa5;
+    margin: 10px 0;
+}
+.name {
+    background-color: #4aaaa5;
+    color: #fff;
+    padding: 20px;
+}
+.flexfix {
+    flex: 1 0 auto;
+}
+p {
+    color: #777;
+    line-height: 1.5em;
+}
+.main-content {
+    background-color: #fff;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #666;
+    border-top: 5px solid #4aaaa5;
+    padding: 20px;
+    flex-shrink: 0;
+}
+nav {
+    align-self: center;
+    color: #777;
+}
+label {
+    color: #777;
+}
+a {
+    color: #777;
+    text-decoration: none;
+}
+hr {
+    border-style: solid;
+    color: #ccc;
+    margin: 20px;
+}
+.portfoliolink {
+    display: inline-block;
+    width: 400px;
+    margin: 20px;
+    position: relative;
+}
+.title {
+    position: absolute;
+    background-color: #4aaaa5;
+    color: #fff;
+    font-size: 2em;
+    bottom: 5%;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+}
+input, label{
+    display: block;
+}
+input, textarea {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+label {
+    margin-bottom: 3px;
+}
+button {
+    display: block;
+    background-color: #4aaaa5;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    width: 100px;
 }
