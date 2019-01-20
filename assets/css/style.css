@@ -165,7 +165,7 @@ input:focus, textarea:focus {
 }
 @media (max-width: 960px) {
     .top-bar-container, .main-content {
-        width: 95vw;
+        width: 98vw;
         margin: 0 auto;
     }
     .name {
@@ -186,5 +186,17 @@ input:focus, textarea:focus {
         justify-content: center;
         align-content: center;
         align-items: center;
+        padding: 5px 10px;
+    }
+    .main-content hr {
+        display: none;
+    }
+    .name {
+        padding-right: 0;
+        margin-right: 2px;
+        max-width: 35%;
+    }
+    form {
+        width: 100%;
     }
 }
