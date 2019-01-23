@@ -53,7 +53,7 @@ input, label{
 }
 input, textarea {
     border: 1px solid #ccc;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding: 5px;
     box-sizing: border-box;
     width: 100%;
@@ -78,7 +78,8 @@ input:focus, textarea:focus {
     outline: #4aaaa5;
 }
 .top-bar-container, .main-content {
-    width: 960px;
+    width: 98vw;
+    max-width: 960px;
     margin: 0 auto;
 }
 .top-bar-container {
@@ -136,6 +137,10 @@ input:focus, textarea:focus {
 .portfolioimage {
     opacity: .5;
 }
+.portfoliolink, .portfoliolink:hover, 
+.portfoliolink:hover img, .portfoliolink:hover title, .portfolioimage {
+    transition-duration: 100ms;
+}
 .title {
     position: absolute;
     background-color: #377F7C;
@@ -145,17 +150,6 @@ input:focus, textarea:focus {
     width: 100%;
     text-align: center;
     padding: 15px 0;
-}
-@media (max-width: 960px) {
-    .top-bar-container, .main-content {
-        width: 98vw;
-        margin: 0 auto;
-    }
-    
-    .name {
-        padding: 8px;
-        font-size: .6em;
-    }
 }
 @media (max-width: 608px) {
     .main-content {
@@ -170,6 +164,8 @@ input:focus, textarea:focus {
         display: none;
     }
     .name {
+        padding: 8px;
+        font-size: .6em;
         margin-right: 2px;
         max-width: 35%;
     }
